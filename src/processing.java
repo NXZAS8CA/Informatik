@@ -16,16 +16,11 @@ public class processing {
             for (int i = 0; i < input.length(); i++) {
                 if (input.charAt(i) == '1') {
                     output[i] = '0';
-
-                }else if(input.charAt(i) == '0'){
+                } else if (input.charAt(i) == '0') {
                     output[i] = '1';
-
                 }
-
             }
-
-
-            return new String(output);
+            return input + new String(output);
         } else {
             return input;
         }
